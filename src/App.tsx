@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import reactLogo from '@/assets/react.svg'
-import viteLogo from '@/assets/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import reactLogo from '@/assets/react.svg';
+import viteLogo from '@/assets/vite.svg';
+import './App.css';
 
-function App (): React.FunctionComponent {
-  const [count, setCount] = useState(0)
+function App(): React.FunctionComponent {
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -18,7 +18,11 @@ function App (): React.FunctionComponent {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-      <button onClick={() => { setCount((count) => count + 1) }}>
+        <button
+          onClick={() => {
+            setCount((count) => count + 1);
+          }}
+        >
           count is {count}
         </button>
         <p>
@@ -29,7 +33,7 @@ function App (): React.FunctionComponent {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
