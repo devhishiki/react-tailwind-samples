@@ -18,3 +18,8 @@ npx tailwindcss init -p
 npm install -D eslint
 npx eslint --init
 ```
+
+## Add Prettier
+```
+npm install -D prettier eslint-config-prettier
+```
