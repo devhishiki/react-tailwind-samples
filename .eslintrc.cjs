@@ -20,13 +20,18 @@ module.exports = {
             }
         }
     ],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
+        "project": "./tsconfig.json",
     },
     "plugins": [
         "react",
+        "@typescript-eslint",
     ],
+    "ignorePatterns": ["*.d.ts"],
     "rules": {
+        "@typescript-eslint/no-non-null-assertion": "warn"
     }
 }
